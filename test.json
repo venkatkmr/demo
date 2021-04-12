@@ -1,0 +1,44 @@
+{
+"AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "",
+    "Metadata": {
+
+    },
+    "Parameters": {
+        
+        "CIDRblocks": {
+            "Description": "-",
+            "Type": "String",
+            "Default": "10.0.0.0/16",
+            "AllowedValues":["10.0.0.0/16", "10.0.0.0/22"]
+
+        }
+        
+    
+    },
+    "Mappings": {
+
+    },
+    "Conditions": {
+
+    },
+    "Resources": {
+        
+        "vpc": {
+            "Type": "AWS::EC2::VPC",
+            "Properties": {
+              "CidrBlock": 
+              { "Ref": "CIDRblocks" }
+              ,
+              "Tags": [
+                  { "Key": "Name", "Value":  "Demovpc" }
+              ]
+            }
+          }
+        
+
+    },
+    "Outputs": {
+
+    }
+}
