@@ -24,7 +24,7 @@
         "vpc": {
             "Type": "AWS::EC2::VPC",
             "Properties": {
-              "CidrBlock":  ,
+              "CidrBlock": { "Ref": "CIDRblocks" },
               "Tags": [
                   { "Key": "Name", "Value":  "Demovpc" }
               ]
