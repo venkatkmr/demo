@@ -5,13 +5,7 @@
 
     },
     "Parameters": {
-        
-        "CIDRblocks": {
-            "Description": "-",
-            "Type": "String",
-            
-        }
-        
+               
     
     },
     "Mappings": {
