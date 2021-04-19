@@ -1,5 +1,8 @@
 {
-"parameters": {
-    "CIDRblocks": "10.0.0.0/22"
+"parameters": [{
+    "ParameterKey": "CIDRblocks",
+    "ParameterValue": "10.0.0.0/22"
+    
 }
+]
 }
