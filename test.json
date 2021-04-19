@@ -9,6 +9,7 @@
         "CIDRblocks": {
             "Description": "enter the cidr range",
             "Type": "String"
+            "Default": "10.0.2.0/22"
 
         }
         
